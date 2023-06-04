@@ -30,9 +30,6 @@ jobs:
       - name: Setup gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Run ktLintFormat
-        run: ./gradlew ktlintFormat
-
       - name: Run ktLintCheck
         run: ./gradlew ktlintCheck
 
