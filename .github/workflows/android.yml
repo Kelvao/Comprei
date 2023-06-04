@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "develop", "master" ]
+    branches: [ "develop", "main" ]
     type: [ "opened", "reopened" ]
 
 concurrency:
