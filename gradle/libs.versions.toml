@@ -1,0 +1,35 @@
+[versions]
+androidGradlePlugin = '8.0.2'
+kotlin = '1.8.20'
+ktlint = '11.3.2'
+
+ktx = '1.9.0'
+appCompat = '1.6.1'
+constraintLayout = '2.1.4'
+material = '1.9.0'
+koin = '3.4.0'
+
+junit = '4.13.2'
+extJunit = '1.1.5'
+espressoCore = '3.4.0'
+
+[plugins]
+android-application = { id = 'com.android.application', version.ref = "androidGradlePlugin" }
+android-library = { id = 'com.android.library', version.ref = 'androidGradlePlugin' }
+kotlin-android = { id = 'org.jetbrains.kotlin.android', version.ref = 'kotlin' }
+ktlint = { id = 'org.jlleitschuh.gradle.ktlint', version.ref = 'ktlint' }
+
+[libraries]
+kotlin = { module = 'org.jetbrains.kotlin:kotlin-stdlib', version.ref = 'kotlin' }
+kotlin-android-ext = { module = 'org.jetbrains.kotlin:kotlin-android-extensions', version.ref = 'kotlin' }
+kotlin-gradle = { module = 'org.jetbrains.kotlin:kotlin-gradle-plugin', version.ref = 'kotlin' }
+androidx-ktx = { group = 'androidx.core', name = 'core-ktx', version.ref = 'ktx' }
+androidx-appcompat = { module = 'androidx.appcompat:appcompat', version.ref = 'appCompat' }
+androidx-constraint-layout = { module = 'androidx.constraintlayout:constraintlayout', version.ref = 'constraintLayout' }
+material = { module = 'com.google.android.material:material', version.ref = 'material' }
+koin = { group = 'io.insert-koin', name = "koin-android", version.ref = 'koin' }
+koin-viewmodel = { module = 'org.koin:koin-android-viewmodel', version.ref = 'koin' }
+
+junit = { module = 'junit:junit', version.ref = 'junit' }
+ext-junit = { module = 'androidx.test.ext:junit', version.ref = 'extJunit' }
+espresso-core = { module = 'androidx.test.espresso:espresso-core', version.ref = 'espressoCore' }
